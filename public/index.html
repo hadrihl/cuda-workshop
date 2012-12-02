@@ -2,33 +2,133 @@
 <html>
 
 <head>
+	<meta charset="utf8">
 	<title>CUDA Training Workshop *beta</title>
-	<meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="PDCC CUDA Training Workshop">
+	<meta name="author" content="pdccteam">
 
 	<!-- le styles -->
-	<style type="text/css" src="css/bootstrap.css"></style>
-	<style type="text/css" src="css/bootstrap-responsive.css"></style>
-	<style type="text/css" src="css/homepage.css"></style>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+    	body {
+    		padding-top: 80px;
+    	}
+    </style>
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/homepage.css" rel="stylesheet">
 </head>
 
 <body>
 	<!-- header -->
-	<div class="header">
-		<div class="navbar navbar-inverse navbar-fixed-top">
-		</div>
-	</div>
+	<div class="header"></div>
 
 	<!-- content -->
 	<div class="container">
 
-		<div class=""
+		<div class="navbar navbar-fixed-top" style="z-index: 10;">
+			<div class="navbar-inner">
+
+				<div class="container">
+					<!-- .btn-navbar is used as the toggle for collapsed navbar content --> 
+           			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                	<span class="icon-bar"></span>
+                	<span class="icon-bar"></span>
+                	<span class="icon-bar"></span>
+            		</a>			
+   					<!-- project name alpha="ff4444", beta="ffbb33"--> 
+					<a class="brand" href="home.html">Parallel and Distributed Computing Center</a>
+
+    				<ul class="nav pull-right">
+						<li class="add-menu"><a class="aboutlink anchorLink" href="#event">Event</a></li>
+						<li class="add=menu"><a class="ninjalink anchorLink" href="#join">Join</a></li>
+                  		<li><a href="#">Syllabus</a></li>  						
+                  		<li><a href="#">Speakers</a></li>
+                  		<li><a href="#">Venue</a></li>
+                  		<li><a href="#">Organizer</a></li>    					
+      					<li class="dropdown">
+                			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></a>
+                			<ul class="dropdown-menu">
+                  				<li><a href="#">Sign in</a></li>
+                  				<li><a href="#">About</a></li>
+                			</ul>
+              			</li>
+   					</ul>
+   					<!-- end of dropdown -->					
+				</div>
+
+			</div>
+		</div>
+		<!-- end of navbar -->
+
+		<div class="hero">
+			<div class="container">
+				<div class="span9">
+					<h1>CUDA Programming Workshop</h1>
+					<p>Date: 21-23 January 2013<br>Venue: Undergraduate Lab 4, School of Computer Science, USM</p>
+				</div>
+
+				<div class="span4">
+				<p> bla bla bla bla bla Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+
+				<div class="span2">
+					<p>bla bla bla</p>
+				</div>
+			</div>
+		</div>
+		<!-- end of hero unit -->
+
+		<div class="event">
+		</div>
+
+		<div class="venue">
+			<iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.my/maps?q=school+of+computer+science+usm&amp;aq=f&amp;ie=UTF8&amp;hl=en&amp;hq=&amp;hnear=School+of+Computer+Sciences,+Penang&amp;t=m&amp;view=map&amp;ll=5.354718,100.301228&amp;spn=0.059819,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com.my/maps?q=school+of+computer+science+usm&amp;aq=f&amp;ie=UTF8&amp;hl=en&amp;hq=&amp;hnear=School+of+Computer+Sciences,+Penang&amp;t=m&amp;view=map&amp;ll=5.354718,100.301228&amp;spn=0.059819,0.036478&amp;z=14&amp;iwloc=A&amp;source=embed" style="color:#0000FF;text-align:left"></a></small>
+		</div>
+
+		<div class="wrapper">
+		</div>
+
+		<div class="organizer">
+			<div class="container">
+				<p>Proudly organized by</p>				
+				<div class="span12">
+			<a href="http://www.usm.my" target="_blank"><img src="img/usm-logo-2.jpg" width="260" height="180" border="0" align="center" style="margin-top:10px;"></a>
+			<a href="http://www.nvidia.com" target="_blank"><img src="img/nvidia-logo.png" width="230" height="180" border="0" align="center" style="margin-top:10px;"></a>
+			<a href="http://www.mimos.my" target="_blank"><img src="img/mimos-logo.jpg" width="150" height="80" border="0" align="center" style="margin-top:10px; margin-left:20px;"></a>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 	<!-- footer -->
 
 	<!-- le javascripts -->
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>	
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/jquery.anchor.js" type="text/javascript"></script>
+	<script src="js/jquery.fancybox-1.2.6.pack.js" type="text/javascript"></script>
+
+  	<script type="text/javascript">
+    	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  	</script>
+
+ 	<script type="text/javascript">
+    	try {
+      		var pageTracker = _gat._getTracker("UA-9207090-1");
+      		pageTracker._trackPageview();
+      	} catch(err) {}
+  	</script>
+
+	<script src="js/craftyslide.min.js"></script>
+	<script>
+		$("#slideshow").craftyslide({
+		'fadetime': 500,
+		'delay': 4000
+		});
+	</script>
 </body>
 
 </html>
